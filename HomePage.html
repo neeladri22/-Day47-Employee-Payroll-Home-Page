@@ -25,6 +25,7 @@
             </div>
         </div>
     </header>
+
     <div class="main-content">
         <!-- UC2 Ability to create a Header Section with Employee Details and Add Employee button -->
         <div class="header-content">
@@ -34,7 +35,42 @@
             <a href="EmployeePayrollApp.html" class="add-button">
                 <img src="add-24px.svg" alt="">Add User</a>
         </div>
+        <!--   header-Content -->
+        <div class="table-main">
+            <table id="table-display" class="table">
+                <!-- UC3 Ability to view Employee Payroll details in a Tabular Format.-->
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr id="userdata">
+                    <td><img class="profile" alt="" src="Ellipse -9.png" style="width: 70px;
+                        height: 52px;"></td>
+                    <td>Prateek Pai</td>
+                    <td>Male</td>
+                    <td>
+                        <div class="dept-label">HR</div>
+                        <div class="dept-label">Finance</div>
+                    </td>
+                    <td>800000</td>
+                    <td>04 Nov 2021</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
+                        <img id="1" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
+    <script src="HomePage.js"></script>
+    <script src="Utility.js"></script>
+    <script src="SiteProperties.js"></script>
+    <script src="EmployeePayrollApp.js"></script>
 </body>
 
 </html>
